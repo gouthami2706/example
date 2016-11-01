@@ -1,0 +1,156 @@
+<!dochtml>
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title> my first page</title>
+	<style>
+
+		h1.one{color: green}
+		.three{background: yellow}
+		h1.two{color: red;
+			background: yellow;
+			border: 10px;}
+		h1#id1{color: red}	
+		p.vegetables{ color: green }
+		p.fruit1 {color: orange}
+		p.fruit2 {color: yellow}
+		img.image {border-top: black}
+		body {
+			background-color:#CCCCCC;
+			border: 2px solid black;
+			 padding: 30px;
+			  margin: 50px;
+
+}
+               div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+	header, footer {
+    padding: 1em;
+    color: yellow;
+    background-color: black;
+    clear: left;
+    text-align: center;
+		}
+	</style>
+</head>
+
+
+
+<body  onpageshow="gouthami()" > 
+<div class="container"> 
+<header>
+   <h1>City Gallery</h1>
+</header>
+
+<h1 id="id1">Hello World!</h1>
+
+
+	<h1 class="one three"> vegetables</h1>            
+	<p class="vegetables" title="me vegetables"><b>tomatoes,carrot</b></p>  
+	<h1 class="two four">fruits</h1>
+	<p class="fruit1" title="me fruits"><b>papaya</b></p> 
+	<p class="fruit2" title=me_fruits><b>banana</b>></p>
+	<p dir="rtl" contenteditable="true">change text</p>
+
+	<a dir="rtl" title="type alt+h" href="http://www.w3schools.com" target="_blank" accesskey="h"> <h1>examples</h1> </a>
+
+	<br>
+	<br>
+	<a title="type alt+k" accesskey="k" href="https://www.bankofamerica.com/" target="_blank" > <img src="banana.jpg" style="float:right ;width:220px;height:220px;border:0;"></a>
+	<br><br>
+
+	<img class="image" title="fruitsandvegetables" src="farrmersmarket.jpg" width="500" height="250">
+    <br>
+    <br>
+   <b> Enter your favourite fruit:</b> <input type="text" name="fname" id="fname" onblur="myFunction()">
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("fname"). style.background="yellow";
+    x.value = x.value.toUpperCase();
+    }
+    </script>
+
+	<script>
+     function gouthami()
+    {
+    alert("Welcome!");
+     }
+     </script>
+     
+     <br>
+     <br>
+     <canvas id="myCanvas" width="300" height="150" style="border:3px solid gold;"></canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(20, 20, 250, 100);
+
+
+</script>
+     <br><br>
+    <hr>
+
+      <div>
+<p dir=rtl style="color: red;font-size:300%"><strong><b><mark>solar_system</mark></b></strong></p>
+<img src="planets.gif" alt="Planets" usemap="#planetmap" style="float:right; width:245px;height:226px;">
+
+     <map name="planetmap">
+         <area shape="rect" coords="0,0,82,226" alt="Sun" href="sun.gif" target="-_blank">
+          <area shape="circle" coords="150,100,16" alt="Mercury" href="merglobe.gif" target="-_blank">
+          <area shape="circle" coords="204,148,40" alt="Venus" href="venglobe.gif" target="-_blank">
+      </map>
+
+      </div>
+<br><object data="song.wav.lnk">
+         <param name="autoplay" value="true">
+
+        </object>	<hr><br>
+<iframe src="https://www.youtube.com/" name="iframe_a  height="200" width="300"></iframe>
+        <br>
+        <a  href="https://www.bankofamerica.com/" target="iframe_a" > <img src="banana.jpg" style="float:right ;width:220px;height:220px;border:0;"></a>
+	<br><br>
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+     <p id="demo">This is a demonstration.</p>
+
+          <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+              }
+          </script>
+
+
+          
+<script>
+function light1(sw) {
+    var pic;
+    if (sw == 0) {
+        pic = "pic_bulboff.gif"
+    } else {
+        pic = "pic_bulbon.gif"
+    }
+    document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light1(1)">Light On</button>
+<button type="button" onclick="light1(0)">Light Off</button>
+</p>
+
+<footer>Copyright © W3Schools.com</footer>
+</div>
+
+<br><br><br><br><br><br><br><br>
+     </body>
+</html>

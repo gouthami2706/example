@@ -1,0 +1,13 @@
+doctype html defines it is html5 document (document declaration)
+html tells html document
+head defines title name
+body displays on homepage
+heading 
+paragraph
+we can add html links directly clicking on that defines web page
+ href attribute. 
+----Attributes are used to provide additional information about HTML elements.
+elements_____div p h1 br
+betwen tags is element content
+we are unable to place image bannannnnnnnnnnn   as title
+we uses classes to differentiate tags and for style
